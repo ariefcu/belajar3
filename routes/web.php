@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "name" => "Arief Cahyo Utomo",
+        "email" => "ariefcu@gmail.com",
+        "image" => "img/brain.png"
+    ]);
 });
 
 Route::get('/blog', function () {
